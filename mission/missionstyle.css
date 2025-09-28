@@ -46,3 +46,12 @@ img {
 li {
     margin-bottom: 15px;
 }
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h4 {
+    color:#4F9ACF;
+}
