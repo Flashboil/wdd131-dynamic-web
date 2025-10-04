@@ -18,6 +18,12 @@ header {
     width: 100%;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
 h1 {
     margin-bottom: 5px;
 }
