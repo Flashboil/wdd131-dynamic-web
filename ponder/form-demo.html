@@ -23,7 +23,9 @@
         </p>
         <p>
             <label for="address">Address:</label>
-            <textarea id="address" required>
+            <textarea 
+            id="address"
+            required>
             </textarea>
         </p>
         <p>
@@ -34,16 +36,16 @@
                 <option value="paypal">Paypal</option>
             </select>
         </p>
-        <p class="">
+        <p class="hide" id="creditCardInfo">
             <label for="creditCardNumber">Credit Card Number:</label>
             <input 
             id="creditCardNumber"
-            type="text" 
+            type="text"
             placeholder="Enter 16 digits" 
             required 
             pattern="[0-9]{16}">
         </p>
-        <p class="">
+        <p class="hide" id="paypalInfo">
             <label for="paypalName">PayPal Username:</label>
             <input 
             id="paypalName" 
