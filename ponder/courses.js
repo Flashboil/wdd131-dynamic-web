@@ -18,11 +18,23 @@ const aCourse = {
         instructor: 'Sis A'
     }
     ],
-    enrollStudent: function (sectionNum) {
+    enrollStudent: function (sectionNum, add=true) {
         console.log("sectionNum to enroll in:", sectionNum);
-        const theSection = sections.find((section) => sectionNum == section.sectionNum)
+        const theSection = this.sections.find((section) => sectionNum == section.sectionNum);
+        if ((theSection) && (add == true)) {
+            theSection.enrolled++;
+            renderSections(this.sections);
+        }
+        else if ((theSection) && (add == false)) {
+            theSection.enrolled--;
+            renderSections(this.sections);
+        }
     }
 };
+
+// function findSection(section) {
+//     return sectionNum == section.sectionNum
+// }
 
 aCourse.sections[0].instructor
 const key = "code";
@@ -56,5 +68,17 @@ function renderSections(sections) {
 
 renderHeader(aCourse);
 renderSections(aCourse.sections);
-aCourse.enrollStudent(1)
 
+document.querySelector("#enrollStudent").addEventListener("click", ()=>{
+    const sectionInput = document.querySelector("#sectionNumber")
+    aCourse.enrollStudent(sectionInput.value, true)
+})
+
+document.querySelector("#dropStudent").addEventListener("click", ()=>{
+    const sectionInput = document.querySelector("#sectionNumber")
+    aCourse.enrollStudent(sectionInput.value, false)
+})
+
+// function clickHandler(event) {
+//     const sectionInput = document.querySelector(sectionNumber)
+// }
