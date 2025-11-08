@@ -1,21 +1,19 @@
 const characterCard = {
     name: "Salacious B. Crumb",
     class: "Bard",
-    level: "5",
-    health: "150",
+    level: 5,
+    health: 150,
     image: "crumb.webp",
     attacked: function () {
-        health -= 20;
-        if (health <= 0) {
+        this.health -= 20;
+        if (this.health <= 0) {
             alert("Your character has died.")
         }
     },
     levelUp: function () {
-        level += 1
+        this.level += 1
     }
 }
-
-
 
 function statsTemplate(character){
     return `
@@ -36,8 +34,17 @@ function renderDetails(character) {
     statsEl.innerHTML = statsTemplate(character);
 }
 
-// document.querySelector(".button").addEventListener("click", ()=>{
-    
-// })
-
 renderDetails(characterCard);
+
+function handleClick(event) {
+    const clicked = event.target.id;
+    if (clicked == "attacked") {
+        characterCard.attacked();
+    } else if (clicked == "levelup") {
+        characterCard.levelUp();
+    }
+    renderDetails(characterCard);
+  }
+
+document.querySelector(".button").addEventListener("click", handleClick);
+
