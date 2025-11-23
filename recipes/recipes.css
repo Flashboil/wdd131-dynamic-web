@@ -25,13 +25,13 @@ a {
     justify-content: center;
 }
 
-.search img {
+#search img {
     max-width: 1em;
     justify-content: right;
     margin: .1em;
 }
 
-.search {
+#search {
     max-width: 70%;
     margin: 1em auto;
     border: solid black 1px;
