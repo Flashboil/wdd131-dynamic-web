@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Sixtyfour&display=swap');
+
+body {
+    --primary-color: #FFC266;
+    --secondary-color: #241200;
+    --accent1-color: #FFDB9A;
+    --accent2-color: #FF9B00;
+    
+    background-color: #241200;
+    color: #FFDB9A;
+    font-family: 'Courier Prime', Courier, monospace;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+#left, #right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1 {
+    font-family: "Sixtyfour";
+    color: #FFC266;
+}
+
+.profile, .stats {
+    padding: 1em;
+    border: #FFC266 solid 2px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.profile-image {
+    font-size: .5em;
+}
+
+.character-data section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills {
+    padding: 1em;
+    border: #FFC266 solid 2px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#skills-left {
+    margin-left: auto;
+}

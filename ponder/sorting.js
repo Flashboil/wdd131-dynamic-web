@@ -101,6 +101,16 @@ const hikes = [
   const sortedHikes = filteredHikes.map((hike) => hike.distance).sort();
 
   console.log(sortedHikes);
+
+  localStorage.setItem("userName", "Hobbs")
+
+  const name = localStorage.getItem("userName")
+  console.log(name)
+
+  localStorage.setItem("hikes", JSON.stringify(hikes))
+
+  const hikesFromStorage = localStorage.getItem("hikes")
+  console.log(hikesFromStorage)
   
 
   
