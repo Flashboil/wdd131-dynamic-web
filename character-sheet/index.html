@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Sheet</title>
     <link rel="stylesheet" href="styles/character-sheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="character-sheet.js" defer></script>
 </head>
 <body>
     <header>
         <img src="shipLogo.png">
-        <h1>STARS WITHOUT NUMBER</h1>
-        <nav>
-            <a src="#">HOME</a>
-            <a src="#">NOTES</a>
-        </nav>
+        <section>
+            <h1>STARS WITHOUT NUMBER</h1>
+            <nav>
+                <a src="#">HOME</a>
+                <a src="#">NOTES</a>
+            </nav>
+        </section>
     </header>
     <main>
         <section id="left">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="shipLogo.png">
                 </div>
                 <div class="character-data">
                     <p>NAME: PERCIVAL STEINER</p>
@@ -31,20 +34,24 @@
                         <p>HP: 11/11</p>
                         <p>AC: 10</p>
                     </section>
-                    <p>EFFORT: 0</p>
+                    <p>EFFORT: 0/3</p>
                 </div>
             </div>
             <div class="stats">
                 <div class="radar">
-
+                    <canvas id="myChart"></canvas>
                 </div>
                 <div class="stats-data">
-                    <p>STR: 9</p>
-                    <p>DEX: 12</p>
-                    <p>CON: 11</p>
-                    <p>INT: 12</p>
-                    <p>WIS: 13</p>
-                    <p>CHA: 7</p>
+                    <section>
+                        <p>STR: 9</p>
+                        <p>DEX: 12</p>
+                        <p>CON: 11</p>
+                    </section>
+                    <section>
+                        <p>INT: 12</p>
+                        <p>WIS: 13</p>
+                        <p>CHA: 7</p>
+                    </section>
                 </div>
             </div>
         </section>
@@ -64,7 +71,15 @@
                     <p></p>
                 </section>
                 <section id="skills-right">
-                    
+                    <p>[-1] Program</p>
+                    <p>[-1] Punch</p>
+                    <p>[+0] Shoot</p>
+                    <p>[-1] Sneak</p>
+                    <p>[-1] Stab</p>
+                    <p>[-1] Survive</p>
+                    <p>[+1] Talk</p>
+                    <p>[-1] Trade</p>
+                    <p>[-1] Work</p>
                 </section>
             </div>
         </section>
