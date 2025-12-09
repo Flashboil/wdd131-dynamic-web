@@ -50,8 +50,13 @@ h1 {
 
 .profile-image {
     font-size: .5em;
-    background-color: #FFC266;
-    max-width: 250px;
+    /* background-color: #FFC266; */
+    width: 250px;
+    height: 250px;
+}
+
+#myChart {
+    width: 250px;
     height: 250px;
 }
 
@@ -63,10 +68,14 @@ h1 {
 .stats-data {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-height: 250px;
 }
 
 #myChart {
+    width: 250px;
     max-width: 250px;
+    height: 250px;
+    max-height: 250px;
 }
 
 .skills {
@@ -85,4 +94,26 @@ h1 {
 
 #skills-right{
     margin-top: 1em;
+}
+
+.saving-throws {
+    padding: 1em;
+    border: #FFC266 solid 2px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.saving-throws section {
+    padding: 0 auto;
+    text-align: center;
+}
+
+.saving {
+    border: #FFC266 solid 2px;
+    border-radius: 5px;
+    background-color: #FFC266;
+    color:#241200;
+    font-size: 1em;
 }

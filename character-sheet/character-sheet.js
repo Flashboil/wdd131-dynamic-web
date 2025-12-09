@@ -16,15 +16,13 @@ const data = {
     ],
     datasets: [{
       label: '',
-      data: [9, 12, 11, 12, 13, 7],
+      data: character.attributes,
       pointRadius: 0,
       fill: true,
       backgroundColor: '#FFc266',
       borderColor: '#ff9b00',
       pointBackgroundColor: '#ff9b00',
       pointBorderColor: '#ff9b00',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgb(255, 99, 132)'
     }]
   };
 
@@ -59,3 +57,13 @@ new Chart(ctx, {
         }
     }
 });
+
+function FormatProfile()
+{
+
+}
+
+function FormatAttributes()
+{
+
+}
