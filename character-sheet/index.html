@@ -11,91 +11,29 @@
 </head>
 <body>
     <header>
-        <img src="shipLogo.png">
+        <img src="shipLogo_updated.png">
         <section>
             <h1>STARS WITHOUT NUMBER</h1>
-            <nav>
-                <a src="#">HOME</a>
-                <a src="#">NOTES</a>
-            </nav>
         </section>
     </header>
     <main>
         <section id="left">
             <div class="profile">
-                <img class="profile-image" src="Herbert_West_orange.jpg" alt="Doctor holding a syringe">
-                <div class="character-data">
-                    <p>NAME: PERCIVAL STEINER</p>
-                    <section>
-                        <p>CLASS: PSIONIC</p>
-                        <p>LEVEL: 4</p>
-                    </section>
-                    <section>
-                        <p>HP: 11/11</p>
-                        <p>AC: 10</p>
-                    </section>
-                    <p>EFFORT: 0/3</p>
-                </div>
             </div>
             <div class="stats">
                 <div class="radar">
                     <canvas id="myChart"></canvas>
                 </div>
                 <div class="stats-data">
-                    <section>
-                        <p>STR: 9</p>
-                        <p>DEX: 12</p>
-                        <p>CON: 11</p>
-                    </section>
-                    <section>
-                        <p>INT: 12</p>
-                        <p>WIS: 13</p>
-                        <p>CHA: 7</p>
-                    </section>
                 </div>
             </div>
         </section>
         <section id="right">
             <div class="skills">
-                <section id="skills-left">
-                    <p>Administer [-1]</p>
-                    <p>Connect [+0]</p>
-                    <p>Exert [-1]</p>
-                    <p>Fix [-1]</p>
-                    <p>Heal [+1]</p>
-                    <p>Know [+1]</p>
-                    <p>Lead [-1]</p>
-                    <p>Notice [+1]</p>
-                    <p>Perform [-1]</p>
-                    <p>Pilot [-1]</p>
-                    <p></p>
-                </section>
-                <section id="skills-right">
-                    <p>[-1] Program</p>
-                    <p>[-1] Punch</p>
-                    <p>[+0] Shoot</p>
-                    <p>[-1] Sneak</p>
-                    <p>[-1] Stab</p>
-                    <p>[-1] Survive</p>
-                    <p>[+1] Talk</p>
-                    <p>[-1] Trade</p>
-                    <p>[-1] Work</p>
-                </section>
             </div>
             <div class="saving-throws">
-                <section>
-                    <p>PHYSICAL</p>
-                    <p class="saving">v12</p>
-                </section>
-                <section>
-                    <p>MENTAL</p>
-                    <p class="saving">v12</p>
-                </section>
-                <section>
-                    <p>EVASION</p>
-                    <p class="saving">v12</p>
-                </section>
             </div>
+            <p id="tooltip">Left Click to increase Health / Effort, Right Click to decrease Health / Effort.</p>
         </section>
     </main>
 </body>

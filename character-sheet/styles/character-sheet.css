@@ -5,17 +5,31 @@ body {
     --secondary-color: #241200;
     --accent1-color: #FFDB9A;
     --accent2-color: #FF9B00;
-    
-    background-color: #241200;
+
     color: #FFDB9A;
     font-family: 'Courier Prime', Courier, monospace;
     box-sizing: border-box;
+
+    background-color: #3a2b1e; /* dark brown */
+    background-image: linear-gradient(
+        #e38b2c33 1px,   /* transparent orange */
+        transparent 1px
+    );
+    background-size: 100% 4px;
 }
 
 header {
+    background-color: #241200;
     display: grid;
     grid-template-columns: 110px 1fr;
     margin-bottom: 1em;
+    padding: 1em;
+    border: #FFC266 solid 2px;
+    border-radius: 5px;
+}
+
+div {
+    background-color: #241200;
 }
 
 header img {
@@ -71,6 +85,11 @@ h1 {
     max-height: 250px;
 }
 
+.stats-data section {
+    display: flex;
+    flex-direction: column;
+}
+
 #myChart {
     width: 250px;
     max-width: 250px;
@@ -116,4 +135,8 @@ h1 {
     background-color: #FFC266;
     color:#241200;
     font-size: 1em;
+}
+
+#tooltip {
+    margin: 0 0 
 }
